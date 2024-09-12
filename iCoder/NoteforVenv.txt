@@ -1,0 +1,36 @@
+
+1. install the virtual environment :
+        >>>> pip install virtualenv  
+
+2. creat a environment name " myprojectenv"  : 
+      >>>>> virtualenv myprojectenv
+
+3. Activate the environment: 
+
+      >>>>> .\myprojectenv\Scripts\activate
+
+  I  phase issue to activate the environment  Then I  run this command 
+         >>>> Set-ExecutionPolicy RemoteSigned 
+
+  in windows paworshell  .  You if you want to reset the terminal as it before  You can run this command 
+         >>>>>Set-ExecutionPolicy Restricted
+
+
+
+ I aloso change  the vs code extension setting.json by 
+  file > preference > setting > search extension > click  Edit in setting.json >  paste ( "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"], )
+
+
+4. Deactivate the Environment:
+       >>>>>>  .\myprojectenv\Scripts\deactivate
+
+5. facing error after activating environment  ["ModuleNotFoundError: No module named 'distutils'"]
+
+6. simply take help of chatgpt or install this by 
+   >>>>>>>>>> pip install setuptools
+
+
+7. If you use bash terminal in VS code then you have to type 
+     >>>>>>>>>>> source myprojectenv/Scripts/activate
+
+8. Before you activate the virtualenv environment make sure you cd the project folder.
